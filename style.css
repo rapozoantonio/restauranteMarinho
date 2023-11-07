@@ -67,12 +67,35 @@ https://matchthemes.com
 }
 
 
-
 /*************************************
 
 1. MAIN STYLES
 
  ************************************/
+
+ /* Botton Menu created by André */
+
+ /* Estilização do botão */
+.centered-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Isso garante que o botão ocupe toda a altura da tela */
+}
+
+.custom-button {
+  background-color: white; /* Cor de fundo preto */
+  color: black; /* Cor do texto dourado */
+  padding: 20px 30px; /* Tamanho do botão */
+  margin-right: 25em;
+  font-size: 16px; /* Tamanho da fonte */
+  border: black solid 1.5px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+button:hover{
+  background: var(--submenu-background-color);
+}
 
 
 /* RESET STYLES */
@@ -95,7 +118,7 @@ sub {	bottom: 5px;	font-size: 11px;	position: relative;	vertical-align: bottom;}
 button,input,select,textarea { font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle;
+  vertical-align: middle;
 }
 .no-margin{margin:0px !important;}
 .no-bottom{margin-bottom:0px;}
@@ -1042,9 +1065,9 @@ color: #ffffff;}
 
 /* Parallax Backgrounds */
 
-#home-content-2, #home-content-25, #home-content-33{background-image:url('images/home/parallax-bkg1.jpg');}
-#home-content-4, #home-content-94, #home-content-115{background-image:url('images/home/parallax-2.jpg');}
-#home-content-6, #home-content-27, #home-content-102, #home-content-104{background-image:url('images/home/parallax-3.jpg');}
+#home-content-2, #home-content-25, #home-content-33{background-image:url('images/home/marinho-banner-inicial-3.png');}
+#home-content-4, #home-content-94, #home-content-115{background-image:url('images/home/marinho-banner\ inicial.png');}
+#home-content-6, #home-content-27, #home-content-102, #home-content-104{background-image:url('images/home/marinho-banner\ inicial-2.png');}
 
 #home-content-102{
 	padding-top:81px;
@@ -2120,14 +2143,14 @@ flex:1 1 auto;}
 ************************************/
 
 /* Home Slider */
-.slide-1{background-image:url('images/pages-top/reservation-page.jpg');}
-.slide-2{background-image:url('images/pages-top/slider-2.jpg');}
-.slide-3{background-image:url('images/pages-top/slider-3.jpg');}
+.slide-1{background-image:url('images/home/marinho-banner\ inicial.png');}
+.slide-2{background-image:url('images/home/marinho-banner\ inicial-2.png');}
+.slide-3{background-image:url('images/home/marinho-banner\ inicial-3.png');}
 
 /* Top Pages Image */
-.top-menu-1col, .top-menu-2col, .top-menu-3col, .top-menu-acc, .top-menu-5{background-image:url('images/pages-top/menu-img.jpg');}
-.top-reservation{background-image:url('images/pages-top/reservation-page.jpg');}
-.top-blog-classic, .top-blog-list, .top-blog-grid-2cols, .top-blog-grid-3cols, .top-blog-single-page{background-image:url('images/pages-top/blog-img.jpg');}
+.top-menu-1col, .top-menu-2col, .top-menu-3col, .top-menu-acc, .top-menu-5{background-image:url('images/home/marinho-menu.png');}
+.top-reservation{background-image:url('images/home/marinho-descubra-restaurante.png');}
+.top-blog-classic, .top-blog-list, .top-blog-grid-2cols, .top-blog-grid-3cols, .top-blog-single-page{background-image:url('images/home/marinho-nossa-história.png');}
 .top-team-2cols, .top-team-3cols, .top-team-4cols{background-image:url('images/pages-top/team-page.jpg');}
 .top-gallery-3cols, .top-gallery-3cols-fs, .top-gallery-4cols, .top-gallery-4cols-fs{background-image:url('images/pages-top/reservation-page.jpg');}
 .top-contact{background-image:url('images/pages-top/contact-us.jpg');}
