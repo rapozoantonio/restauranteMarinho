@@ -1013,7 +1013,7 @@ right:0;
 	text-align: center;
 	padding:0 15px;
     width: 100%;
-	top:50%;
+	top:64%;
 	left:auto;
 		-ms-transform: translate(0, -50%);
 -webkit-transform: translate(0, -50%);
@@ -2143,12 +2143,14 @@ flex:1 1 auto;}
 ************************************/
 
 /* Home Slider */
-.slide-1{background-image:url('images/home/marinho-banner\ inicial.png');}
-.slide-2{background-image:url('images/home/marinho-banner\ inicial-2.png');}
-.slide-3{background-image:url('images/home/marinho-banner\ inicial-3.png');}
+.slide-1{background-image:url('images/menu-img/picanha-front.png');}
+.slide-2{background-image:url('images/menu-img/frios2.jpeg');}
+.slide-3{background-image:url('images/menu-img/sandwich.jpeg');}
+.slide-4{background-image:url('images/menu-img/picanha-mobile.jpeg');}
+.slide-5{background-image:url('images/menu-img/bread.jpeg');}
 
 /* Top Pages Image */
-.top-menu-1col, .top-menu-2col, .top-menu-3col, .top-menu-acc, .top-menu-5{background-image:url('images/home/marinho-menu.png');}
+.top-menu-1col, .top-menu-2col,.top-home-main,.top-menu-3col, .top-menu-acc, .top-menu-5{background-image:url('images/home/marinho-banner\ inicial.png');}
 .top-reservation{background-image:url('images/home/marinho-descubra-restaurante.png');}
 .top-blog-classic, .top-blog-list, .top-blog-grid-2cols, .top-blog-grid-3cols, .top-blog-single-page{background-image:url('images/home/marinho-nossa-história.png');}
 .top-team-2cols, .top-team-3cols, .top-team-4cols{background-image:url('images/pages-top/team-page.jpg');}
