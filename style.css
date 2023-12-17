@@ -988,6 +988,8 @@ font-size:108px;
 letter-spacing:0.03em;}
 .post-subtitle{color:#ffffff;
 text-transform:uppercase;
+text-decoration: underline;
+font-weight: 500;
 opacity:0.9;}
 
 .item-img{background-position: center center;
