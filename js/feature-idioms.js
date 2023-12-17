@@ -1,10 +1,11 @@
 const idiomas = document.querySelectorAll('.flag');
 const flagsArray = Array.from(idiomas);
+// Suponha que 'translations' seja o objeto carregado do arquivo de tradução
 
 // Function to update the text content on the page
 function updateTexts(translations, idioma) {
   // Using data-translate-key to update text content
-  document.querySelectorAll('[data-translate-key]').forEach(element => {
+  document.querySelectorAll('[data-translate-key]').forEach((element) => {
     const key = element.getAttribute('data-translate-key');
     if (translations[idioma] && translations[idioma]['header'][key]) {
       element.textContent = translations[idioma]['header'][key];
@@ -18,10 +19,16 @@ function updateTexts(translations, idioma) {
     if (translations[idioma] && translations[idioma]['footer'][key]) {
       element.textContent = translations[idioma]['footer'][key];
     }
-    if (translations[idioma] && translations[idioma]['about_section_one'][key]) {
+    if (
+      translations[idioma] &&
+      translations[idioma]['about_section_one'][key]
+    ) {
       element.textContent = translations[idioma]['about_section_one'][key];
     }
-    if (translations[idioma] && translations[idioma]['about_section_two'][key]) {
+    if (
+      translations[idioma] &&
+      translations[idioma]['about_section_two'][key]
+    ) {
       element.textContent = translations[idioma]['about_section_two'][key];
     }
     if (translations[idioma] && translations[idioma]['menu_section_one'][key]) {
@@ -69,7 +76,10 @@ function updateTexts(translations, idioma) {
     if (translations[idioma] && translations[idioma]['beverages_menu'][key]) {
       element.textContent = translations[idioma]['beverages_menu'][key];
     }
-    if (translations[idioma] && translations[idioma]['classic_and_others'][key]) {
+    if (
+      translations[idioma] &&
+      translations[idioma]['classic_and_others'][key]
+    ) {
       element.textContent = translations[idioma]['classic_and_others'][key];
     }
     if (translations[idioma] && translations[idioma]['beer_and_shots'][key]) {
@@ -81,16 +91,16 @@ function updateTexts(translations, idioma) {
 // Function to fetch translations and update texts
 function loadTranslations(idioma) {
   fetch('js/translations.json') // Adjust the path if necessary
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
       return response.json();
     })
-    .then(translations => {
+    .then((translations) => {
       updateTexts(translations, idioma);
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('Error fetching the translations:', error);
     });
 }
@@ -98,7 +108,10 @@ function loadTranslations(idioma) {
 // Event listeners for language selection
 flagsArray.forEach((flag) => {
   flag.addEventListener('click', () => {
-    const idioma = flag.getElementsByTagName('span')[0].textContent.toUpperCase().replace('-', '_'); // Replacing hyphen with underscore for matching JSON keys
+    const idioma = flag
+      .getElementsByTagName('span')[0]
+      .textContent.toUpperCase()
+      .replace('-', '_'); // Replacing hyphen with underscore for matching JSON keys
     pickedLang(idioma);
   });
 });
